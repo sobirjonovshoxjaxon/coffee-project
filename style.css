@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    padding: 0 2%;
+    height: 12vh;
+}
+
+.navbar .container-fluid .navbar-brand{
+    font: 800 40px sans-serif;
+    color: white;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: orange;
+}
+
+.navbar-nav .nav-item i{
+    color: white;
+}
+
+.navbar-nav .nav-item i:hover{
+    color: orange;
+}
+
+.navbar-nav{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    font: 500 19px sans-serif;
+    text-transform: capitalize;
+}
+
+#carouselExample{
+    background-image: url(images/banner-bg.png);
+    background-size: cover;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item h2{
+    font: 500 60px sans-serif;
+    text-transform: capitalize;
+}
+
+.carousel-item h1{
+    font: 800 70px sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+
+.carousel-item p{
+    font: 500 19px sans-serif;
+    color: white;
+    width: 44%;
+}
+
+.carousel-item button{
+    padding: 15px 30px;
+    height: 50px;
+    width: 180px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item button:hover{
+    background-color: orange;
+}
