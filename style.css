@@ -155,5 +155,390 @@
 .about-us-left a:hover{
     background-color: orange;
     color: white;
-   
 }
+
+#our-gallery{
+    margin: 130px auto;
+}
+
+#our-gallery h1{
+    font: 700 45px sans-serif;
+    text-transform: uppercase;
+    color: orange;
+}
+
+#our-gallery p{
+    font: 500 18px sans-serif;
+    margin: 35px 0 50px 0;
+}
+
+#our-gallery .top{
+    text-align: center;
+}
+
+#our-gallery .pictures{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+#our-gallery .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#our-gallery .picture{
+    position: relative;
+}
+
+.picture .icon{
+    position: absolute;
+    color: black;
+    background-image: linear-gradient(rgba(201, 197, 197, 0.5),rgba(201,197, 197, 0.5));
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-gallery .picture:hover .icon{
+    opacity: 1;
+}
+
+.icon i{
+    font-size: 50px;
+}
+
+#our-gallery a{
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font: bold 18px sans-serif;
+    width: 14%;
+    margin: 40px auto 0 auto;
+}
+
+#our-gallery a:hover{
+    background-color: orange;
+    color: white;
+}
+
+#services{
+ background-image: url(images/services-bg.png);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 83vh;
+ margin-bottom: 100px;
+ padding: 90px 170px;
+}
+
+#services h1{
+    font: 700 35px sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+#services .firstly-p{
+    width: 75%;
+    font: 500 18px sans-serif;
+    margin: 20px auto 70px auto;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.cups{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cup{
+    background-color: orange;
+    width: 29%;
+    height: 300px;
+    padding: 40px 30px;
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.cup:hover{
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+.cups .cup img{
+    width: 60px;
+    height: 60px;
+}
+
+.cup h3{
+    font: 500 28px sans-serif;
+    text-transform: capitalize;
+}
+
+.cup a{
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font: bold 15px sans-serif;
+    padding: 15px 25px;
+}
+
+.cup a:hover{
+    background-color: black;
+    color: white;
+}
+
+#testimonial{
+    margin-bottom: 100px;
+}
+
+#testimonial h1{
+    font: 700 35px sans-serif;
+    text-transform: uppercase;
+    color: orange;
+}
+
+#testimonial p{
+    width: 75%;
+    font: 500 18px sans-serif;
+    margin: 20px auto 70px auto;
+    width: 100%;
+}
+
+
+ .monila h3{
+    font: 700 30px sans-serif;
+    text-transform: capitalize;
+    color: orange;
+    margin-left: 120px;
+ }
+
+ .monila h3 img{
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+ }
+
+ .monila p{
+    font: 500 18px sans-serif;
+    padding-left: 10px;
+ }
+
+ .monila{
+    height: 150px;
+    position: relative;
+    background-color: white;
+ }
+
+ .monila::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 120px;
+    height: 150px;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+ }
+
+ .monila::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 120px;
+    height: 150px;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+ }
+
+ #contact-us h1{
+    font: 700 35px sans-serif;
+    text-transform: uppercase;
+    color: orange;
+    text-align: center;
+    margin-bottom: 80px;
+ }
+
+ .contacts .left-contact{
+    background-image: url(images/img-10.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 50%;
+
+ }
+
+ .contacts .right-contact{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    cursor: pointer;
+ }
+
+ .contacts .right-contact img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .contacts{
+    height: 80vh;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .left-contact form{
+    text-align: center;
+    padding: 50px 10%;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+ }
+
+ form input{
+    width: 80%;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 25px;
+ }
+
+ form input::placeholder{
+    text-transform: capitalize;
+    font: 500 20px sans-serif;
+ }
+
+ form textarea{
+    padding:60px 40px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+ }
+
+ form textarea::placeholder{
+    text-transform: capitalize;
+    font: 500 25px sans-serif;
+ }
+
+ form button{
+    padding: 15px 45px;
+    color: white;
+    background-color: orange;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s;
+ }
+
+ form button:hover{
+    background-color: white;
+    color: black;
+ }
+
+ #footer{
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .blocks{
+    display: flex;
+ }
+
+ .about h3{
+   font:  600 25px sans-serif;
+   text-transform: capitalize;
+ }
+
+ .menu li{
+    list-style: none;==
+ }
+
+ .menu li a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s;
+ }
+
+ .menu li a:hover{
+    color: orange;
+ }
+
+.menu h3{
+    font:  600 25px sans-serif;
+    text-transform: capitalize;
+}
+
+.secondly-block h3{
+    font:  600 25px sans-serif;
+    text-transform: capitalize;
+}
+
+.secondly-block p{
+    margin: 0;
+}
+
+.thirdly-block h3{
+    font:  600 25px sans-serif;
+    text-transform: capitalize;
+}
+
+.thirdly-block p img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    transition: 1s;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.thirdly-block p img:hover{
+    color: orange;
+}
+
+.thirdly-block p{
+    transition: 1s;
+}
+
+.thirdly-block p:hover{
+    color: orange;
+}
+
+.thirdly-block img{
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+ 
+
+
+
+ 
+
