@@ -5,7 +5,8 @@
 
 .navbar {
     padding: 0 2%;
-    height: 12vh;
+    opacity: 1;
+    min-height: 12vh;
 }
 
 .navbar .container-fluid .navbar-brand{
@@ -14,7 +15,11 @@
 }
 
 .navbar-nav{
+    width: 45%;
     display: flex;
+    justify-content: space-between;
+    font: 500 19px sans-serif;
+    text-transform: capitalize;
     align-items: center;
 }
 
@@ -22,67 +27,133 @@
     color: white;
 }
 
-.navbar-nav .nav-item .nav-link:hover{
+.nav-item .nav-link:hover{
     color: orange;
 }
 
-.navbar-nav .nav-item i{
-    color: white;
+ .nav-item i{
+   color: white;
 }
 
-.navbar-nav .nav-item i:hover{
-    color: orange;
+ .nav-item i:hover{
+   color: orange;
 }
 
-.navbar-nav{
-    width: 45%;
+#home{
+    height: 94vh;
     display: flex;
-    justify-content: space-between;
-    font: 500 19px sans-serif;
-    text-transform: capitalize;
-}
-
-#carouselExample{
-    background-image: url(images/banner-bg.png);
-    background-size: cover;
-    height: 95vh;
-    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
     background-attachment: fixed;
+    background-image: url(images/banner-bg.png);
     background-position: center;
-    display: flex;
-    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
 }
 
-.carousel-item h2{
-    font: 500 60px sans-serif;
+#home h2{
+    font: 500 55px sans-serif;
     text-transform: capitalize;
 }
 
-.carousel-item h1{
-    font: 800 70px sans-serif;
+#home h1{
+    font: 800 60px sans-serif;
     text-transform: capitalize;
     color: white;
 }
 
-.carousel-item p{
-    font: 500 19px sans-serif;
+#home p{
+    font: 500 18px sans-serif;
     color: white;
-    width: 44%;
+    width: 40%;
+    line-height: 24px;
 }
 
-.carousel-item button{
-    padding: 15px 30px;
-    text-transform: uppercase;
-    color: white;
+#home a{
     background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    margin-top: 40px;
     transition: 0.3s;
-    border: none;
-    cursor: pointer;
+}
+
+#home a:hover{
+    background-color: orange;
+
+}
+
+.navbar .nav-link.active{
+    color: orange;
+}
+
+#about-us{
+    margin: 90px 0 90px 0;
+
+}
+
+.about-us-left{
+    width: 50%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-.carousel-item button:hover{
+.about-us-right{
+    width: 50%;
+    position: relative;
+}
+
+.about-us-right img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px black;
+}
+
+.black-line{
+    position: absolute;
+    border: 4px solid black;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    right: 50px;
+    z-index: -1;
+}
+
+.height{
+    height: 600px;
+}
+
+.about-us-left h1{
+    font: 700 45px sans-serif;
+    text-transform: uppercase;
+    color: orange;
+}
+
+.about-us-left .about-us-left-firstly-p{
+    width: 75%;
+    font: 500 18px sans-serif;
+}
+
+.about-us-left .about-us-left-secondly-p{
+    width: 90%;
+    font: 500 18px sans-serif;
+}
+
+.about-us-left a{
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font: bold 18px sans-serif;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.about-us-left a:hover{
     background-color: orange;
+    color: white;
+   
 }
